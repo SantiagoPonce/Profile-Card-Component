@@ -1,0 +1,95 @@
+:root{
+    --Dark-cyan: hsl(185, 75%, 39%);
+    --Very-dark-desaturated-blue: hsl(229, 23%, 23%);
+    --Dark-grayish-blue: hsl(227, 10%, 46%);
+    --Dark-gray: hsl(0, 0%, 59%);
+}
+
+body{
+    display: flex;
+    flex-direction: column;
+    background-color: var(--Dark-cyan);
+    background-image: url("../images/bg-pattern-top.svg"),url("../images/bg-pattern-bottom.svg");
+    background-position: top left,bottom right;
+    background-repeat: no-repeat;
+    background-size: 100%;
+    font-family: "Kumbh Sans", sans-serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+    min-height: 100vh;
+    align-items: center;
+    justify-content: space-around;
+    padding: 1em;
+}
+.profile-card{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: white;
+    border-radius: 10px;
+    overflow: hidden;
+    max-width:375px;
+}
+.profile-card__cover{
+    inline-size: 100%;
+}
+
+.profile-card__image{
+    border-radius: 100%;
+    border: solid white 4px;
+    inline-size: 30%;
+    position: relative;
+    aspect-ratio: 1/1;
+    object-fit: cover;
+    transform: translateY(-50%);
+}
+
+.profile-card__user{
+    display: flex;
+    gap: .7em;
+    align-items: center;
+    margin: .5em;
+}
+.profile-card__name{
+    font-weight: bold;
+    color: var(--Very-dark-desaturated-blue);
+}
+.profile-card__age{
+    color: var(--Dark-gray);
+}
+
+.profile-card__location{
+    color: var(--Dark-gray);
+    margin: .5em;
+
+}
+.profile-card__metrics{
+    display: flex;
+    justify-content: space-around;
+    padding: 1.5em;
+    inline-size: 100%;
+    border-top: groove hsla(0, 0%, 59%, 0.39) 1px;
+}
+
+
+.profile-card__metric{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.profile-card__metric-value{
+    font-weight: bold;
+    color: var(--Very-dark-desaturated-blue);
+}
+.profile-card__metric-name{
+    color: var(--Dark-gray);
+    font-size: .7em;
+}
+.attribution{
+    width: 15em;
+    text-align: center;
+}
+.attribution__name{
+    color: white;
+}
+
